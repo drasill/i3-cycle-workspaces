@@ -68,7 +68,7 @@ exec --no-startup-id ~/.config/i3/i3-cycle-workspaces/cycle.py --ws 2
 Options
 -------
 
-*It's recommanded you manually launch the script with some options before adding
+*It's recommended you manually launch the script with some options before adding
 it to your i3 config.*
 
 Use the `--ws` option to specify a workspace *regex*.
@@ -82,7 +82,7 @@ Exemple :
 
 ```
 cd ~/.config/i3/i3-cycle-workspaces
-cycle.py --ws 5
+./cycle.py --ws 5
 
 # Or:
 ./cycle.py --ws 5 --cycle 2
