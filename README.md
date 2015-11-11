@@ -1,10 +1,8 @@
-i3-cycle-workspaces
-===================
+# i3-cycle-workspaces
 
 A python script to cycle some workspaces with the same key binding.
 
-What ?
-------
+## What ?
 
 On i3 you can often press a key to go to a specific workspace.
 For exemple with the default config, `mod+2` goes the workspace "2".
@@ -12,8 +10,7 @@ For exemple with the default config, `mod+2` goes the workspace "2".
 When this script runs (in background), if you press `mod+2` while *already*
 being on the workspace 2, you'll go the next workspace.
 
-Why ?
------
+## Why ?
 
 This is actually useful for me, when I need, like, three workspaces dedicated to
 some terms.
@@ -33,8 +30,7 @@ workspaces :
 * 20:Terms
 * *etc.*
 
-How ?
------
+## How ?
 
 *i3-cycle-workspaces* will detect when a `bindsym` to go to a workspace is
 pressed.
@@ -45,10 +41,9 @@ It's fast because it uses the i3 IPC `binding` event.
 
 I suppose you need a recent version of i3wm for this to work.
 
-Installation
-------------
+## Installation
 
-Ubuntu
+### Ubuntu
 
 ```
 sudo apt-get install x11-utils python-pip git
@@ -65,8 +60,7 @@ exec --no-startup-id ~/.config/i3/i3-cycle-workspaces/cycle.py --ws 2
 ```
 
 
-Options
--------
+## Options
 
 *It's recommended you manually launch the script with some options before adding
 it to your i3 config.*
@@ -93,4 +87,18 @@ cd ~/.config/i3/i3-cycle-workspaces
 # You can do this so that ALL workspaces will cycle :
 ./cycle.py --ws .
 ```
+
+### Workspace names
+
+If the cycling occurs on a "numbered" workspace name, like '20:Terms', then the
+script will cycle between incremented workspaces, so '21:Terms', '22:Terms',
+etc.
+
+This is handy to use with the `strip_workspace_numbers yes` option of i3bar.
+
+Otherwise, it will cycle by adding some "˖" to the workspace name.
+
+So cycling on a workspace named "Terms" will then go to "Terms˖", then
+"Terms˖˖", etc.
+
 
