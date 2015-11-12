@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # vim: ts=4 sw=4 et
 
 # NOTE : this is some quick and dirty code for my own needs.
