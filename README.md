@@ -43,16 +43,15 @@ I suppose you need a recent version of i3wm for this to work.
 
 ## Installation
 
-### Ubuntu
+### With PIP
 
 ```
-sudo apt-get install x11-utils python-pip git
 sudo pip install i3ipc
 mkdir -p ~/.config/i3 && cd ~/.config/i3
 git clone https://github.com/drasill/i3-cycle-workspaces
 ```
 
-And add the script to your i3wm config (after you understand the command line
+And add the script to your i3wm config (*after* you understood the command line
 options) :
 
 ```
