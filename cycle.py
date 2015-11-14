@@ -118,7 +118,6 @@ def main():
     parser.add_argument('--ws', action=WsAction, dest='ws', required=True)
     parser.add_argument('--cycle', action=WsAction, dest='cycle', type=int)
     args = parser.parse_args()
-    print(args.ws)
     cycler = I3Cycler(args.ws)
     cycler.run()
 
